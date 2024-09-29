@@ -1,0 +1,5 @@
+1) It is called two way linked list.
+2) Given a node, we can traverse list both in the forward & backward direction, which is not possible in
+ Singly linked list.
+3) A node in singly linked list can only be deleted if we have a pointer to its previous node. But in Doubly linked list we can delete
+the node even if we don't have reference to it's previous node.
