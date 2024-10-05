@@ -1,0 +1,33 @@
+1. It is similar to singly linked list , with a d/f that in circular linked list last node points to the first node not to the null.
+2. Instead of head , we keep track using the last node in circular linked list.
+
+3. It's implementation is as follow-->
+
+public class CircularLinkedList {
+	
+	private ListNode last;
+	private int length;
+	
+	private class ListNode{
+		private ListNode next;
+		private int data; //it can be generic also
+		
+		public ListNode(int data) {
+			this.data = data;
+			this.next = null;
+		}
+	}
+	
+	public CircularLinkedList() {
+		last = null;
+		length = 0;
+	}
+	
+	public int length() {
+		return length;
+	}
+	
+	public boolean isEmpty() {
+		return length == 0;
+	}
+	 
